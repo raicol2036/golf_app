@@ -225,7 +225,7 @@ def personal_page():
 
     try:
         course_df = pd.read_csv("course_db.csv")
-        players_df = pd.read_csv("players_db.csv")
+        players_df = pd.read_csv("players.csv")
     except Exception as e:
         st.error(f"❌ 載入資料錯誤: {e}")
         return
